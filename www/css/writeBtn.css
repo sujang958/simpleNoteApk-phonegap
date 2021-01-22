@@ -1,0 +1,17 @@
+.write-btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    right: 2%;
+    top: 90%;
+}
+
+.reload-btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: fixed;
+    left: 2%;
+    top: 90%;
+}

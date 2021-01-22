@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@font-face {
+    font-family: 'MalgunGothic';
+    src: url('./fonts/MalgunGothic.eot');
+}
+
+
+* {
+    font-family: 'Jua';
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(182, 182, 182);
+}
+
+.title {
+    margin-bottom:50px; 
+}
+
+.input-container {
+    width: 600px; 
+    margin: 4% auto 0; 
+    display: block; 
+    background: #FFF;
+    padding: 1% 10% 2%;
+}
+
+.group { 
+    position:relative; 
+    margin-bottom:45px; 
+}
+
+input, textarea {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+
+input, textarea:focus { 
+    outline:none;
+}
+
+label {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.1s ease all; 
+    -moz-transition:0.1s ease all; 
+    -webkit-transition:0.1s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+}
+
+textarea:focus ~ label, textarea:valid ~ label {
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+#opt-btn-container {
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 10px 22px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.s-btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 8px 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.success {
+    border-color: #4CAF50;
+    color: green;
+}
+  
+.success:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.submit {
+    border-color: #94d1e4;
+    color: skyblue;
+}
+  
+.submit:hover {
+    background-color: #94d1e4;
+    color: white;
+}
+
+.file {
+    border-color: #ff9800;
+    color: orange;
+}
+
+.file:hover {
+    background: #ff9800;
+    color: white;
+}
+
+.bar {
+    position:relative; 
+    display:block; 
+    width:300px;
+}
+
+.bar:before, .bar:after {
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#5264AE; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+.bar:before {
+    left:50%;
+}
+
+.bar:after {
+    right:50%; 
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+.highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+.toast {
+    width:200px;
+    height:15px;
+    height:auto;
+    position:absolute;
+    left:50%;
+    margin-left:-100px;
+    bottom:10px;
+    background-color: #383838;
+    color: #F0F0F0;
+    font-family: MalgunGothic;
+    font-size: 18px;
+    padding:10px;
+    text-align:center;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+}
+
+
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+    to 	 { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+    to 	 { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+    to 	 { width:0; background:transparent; }
+}

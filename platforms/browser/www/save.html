@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/save.css">
+    <script src="./lib/jquery.min.js"></script>
+    <title>Note</title>
+</head>
+<body>
+    <div id="app">
+        <div class="input-container">
+            <div id='title-container'>
+                <h1 class="title">노트 작성</h1>
+            </div>
+            <div class="group">      
+                <input type="text" name="title" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>title</label>
+            </div>
+            <div class="group">   
+                <textarea class="des" name="des" required></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>description</label>
+            </div>
+            <div id="bottom-btn-container">
+                <button type="button" class="btn submit" id="submit-button">작성</button>
+            </div>
+        </div>
+    </div>
+    <div class="toast" style="display: none">작성완료, 이동중...</div>
+
+    <script src="./js/saveNote.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "note",
+  "short_name": "note",
+  "version": "com.note.note",
+  "description": "simple note",
+  "author": "developer",
+  "icons": [],
+  "start_url": "index.html"
+}

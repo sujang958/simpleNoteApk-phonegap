@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    font-family: Jua;
+}
+
+body {
+    font-size: 24px;
+    background-color: rgb(46, 46, 46);
+    color: rgb(245, 155, 53);
+}
+
+.des-container  {
+    overflow: scroll;
+    height: 700px;
+    width: 400px;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.des-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* .middle {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 60%
+} */

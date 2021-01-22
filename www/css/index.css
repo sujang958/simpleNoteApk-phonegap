@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    font-family: Jua;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-title > h2:nth-child(1) {
+    text-align: left;
+    margin-left: 24px;
+}
+
+.asdf {
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.note-item-container {
+    display: grid;
+    grid-template-rows: 200px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(15%, auto));
+    align-items: stretch;
+}
+
+.note-item {
+    background-color: rgba(233, 233, 233, 0.219);
+    border: black solid 4px;
+    border-radius: 15px;
+    filter: drop-shadow(15px 5px 25px #919090);
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.note-item::-webkit-scrollbar {
+    display: none;
+}
+
+.note-item-hr {
+    width: 125px;
+    background-color: black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.note-item-href {
+    color: black;
+}
