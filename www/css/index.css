@@ -33,7 +33,7 @@
     border: black solid 4px;
     border-radius: 15px;
     filter: drop-shadow(15px 5px 25px #919090);
-    overflow: auto;
+    overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none; 
 }
@@ -51,4 +51,18 @@
 
 .note-item-href {
     color: black;
+}
+
+.note-item-edit {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 60px;
+    top: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.note-item--edit-a {
+    text-decoration: none;
 }
