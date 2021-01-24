@@ -15,7 +15,7 @@ function handleSubmit() {
 
 
 function saveNote(title, des) {
-    localStorage.setItem(`${lsLen}`, `{"title":  "${title}", "des": "${des}", "date": "${new Date().toString()}"}`);
+    localStorage.setItem(`${lsLen}`, `{"title":  "${addSlashes(title)}", "des": "${addSlashes(des)}", "date": "${new Date().toString()}"}`);
 }
 
 function showToast(query) {

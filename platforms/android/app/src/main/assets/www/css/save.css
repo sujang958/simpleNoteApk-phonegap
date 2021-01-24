@@ -108,6 +108,16 @@ textarea {
     color: white;
 }
 
+.error {
+    border-color: #da3333;
+    color:#da3333;
+}
+  
+.error:hover {
+    background-color: #da3333;
+    color: white;
+}
+
 .submit {
     border-color: #94d1e4;
     color: skyblue;
